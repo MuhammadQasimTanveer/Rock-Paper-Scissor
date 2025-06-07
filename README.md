@@ -10,7 +10,6 @@ A fully interactive Rock Paper Scissors game built with HTML, CSS, and JavaScrip
 - Responsive and clean UI design
 - Interactive rock, paper, and scissors buttons with hover effects
 - Real-time score tracking: Wins, Losses, and Ties
-- Keyboard controls: Press `r`, `p`, or `s` to play
 - Reset game button to clear the scoreboard
 - Display of both player's and computer's choices with icons
 
