@@ -18,17 +18,6 @@ document.querySelector('.js-scissor-button').addEventListener('click', () => {
     playGame('scissors');
 });
 
-// Keyboard controls
-document.body.addEventListener('keydown', (event) => {
-    if (event.key === 'r') {
-        playGame('rock');
-    } else if (event.key === 'p') {
-        playGame('paper');
-    } else if (event.key === 's') {
-        playGame('scissors');
-    }
-});
-
 // Reset button functionality
 document.getElementById('resetButton').addEventListener('click', () => {
     score.wins = 0;
@@ -101,11 +90,11 @@ function playGame(playerMove) {
     // Display moves with images - image upar, text neeche
     document.querySelector('.moves').innerHTML = 
         `<div class="player-choice">
-            <img class="symbols" src="images/${playerMove}-emoji.png">
+            <img class="symbols" src="Images/${playerMove}-emoji.png">
             <span>You picked ${playerMove}</span>
         </div>
         <div class="computer-choice">
-            <img class="symbols" src="images/${computerMove}-emoji.png">
+            <img class="symbols" src="Images/${computerMove}-emoji.png">
             <span>Computer picked ${computerMove}</span>
         </div>`;
     
